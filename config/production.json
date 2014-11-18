@@ -1,0 +1,11 @@
+{
+  "server": {
+    "hostname": "0.0.0.0",
+    "port": 80
+  },
+  "environment": "production",
+  "log": {
+    "level": "info",
+    "src": false
+  }
+}

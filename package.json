@@ -1,0 +1,28 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "browsersync": "browser-sync start --proxy 'localhost:8081' --port 4000 --files 'public/**' --no-open",
+    "dev": "npm run browsersync & npm run dev-server",
+    "dev-server": "APP_ENV=development npm run server-watch",
+    "lint": "eslint * --quiet",
+    "server-watch": "watchy -w . -i '/\\.|/node_modules|/test|\\.log$' -- npm start | bunyan",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "bunyan": "^1.2.3",
+    "bunyan-request": "^1.1.0",
+    "compression": "^1.2.0",
+    "express": "^4.10.2",
+    "jade": "^1.7.0",
+    "lodash": "^2.4.1",
+    "minimist": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.7.0",
+    "eslint": "^0.9.2",
+    "watchy": "^0.5.6"
+  }
+}

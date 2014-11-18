@@ -1,0 +1,11 @@
+{
+  "server": {
+    "hostname": "127.0.0.1",
+    "port": 44401
+  }
+  "environment": "test",
+  "log": {
+    "level": "info",
+    "src": true
+  }
+}
