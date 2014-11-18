@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "browsersync": "browser-sync start --proxy 'localhost:8081' --port 4000 --files 'public/**' --no-open",
