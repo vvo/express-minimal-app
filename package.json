@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "browsersync": "browser-sync start --proxy 'localhost:8081' --port 4000 --files 'public/**' --no-open",
+    "browsersync": "browser-sync start --config bs-config.js",
     "dev": "npm run browsersync & npm run dev-server",
     "dev-server": "APP_ENV=development npm run server-watch",
     "lint": "eslint * --quiet",
-    "server-watch": "watchy -w . -i '/\\.|/node_modules|/test|\\.log$' -- npm start | bunyan",
+    "server-watch": "watchy -w . -i '/\\.|/node_modules|/test|\\.log$' -- node index | bunyan",
     "start": "node index.js"
   },
   "dependencies": {
