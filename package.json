@@ -7,7 +7,7 @@
     "dev": "npm run browsersync & npm run dev-server",
     "dev-server": "APP_ENV=development npm run server-watch",
     "lint": "eslint * --quiet",
-    "server-watch": "watchy -w . -i '/\\.|/node_modules|/test|\\.log$' -- node index | bunyan",
+    "server-watch": "watchy -w . -i '/\\.|/node_modules|/views|/test|\\.log$' -- node index | bunyan",
     "start": "node index.js"
   },
   "dependencies": {

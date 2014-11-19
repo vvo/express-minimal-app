@@ -3,6 +3,7 @@
 module.exports = {
   'files': [
     'public/**',
+    'views/**'
   ],
   'server': false,
   'proxy': 'localhost:8081',
